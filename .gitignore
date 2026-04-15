@@ -1,0 +1,57 @@
+# ── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.installed.cfg
+MANIFEST
+
+# ── Virtual environments ─────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ── IDE / editor ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Claude Code session files ────────────────────────────────────────────
+.claude/
+*.jsonl
+
+# ── Research papers / PDFs ───────────────────────────────────────────────
+Related Works papers/
+*.pdf
+
+# ── Old / archived code ──────────────────────────────────────────────────
+Old_Code/
+src/
+
+# ── Session exports (data generated at runtime) ──────────────────────────
+exports/
+
+# ── macOS ────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Windows ──────────────────────────────────────────────────────────────
+desktop.ini
+$RECYCLE.BIN/
+
+# ── Logs ─────────────────────────────────────────────────────────────────
+*.log
+*.err

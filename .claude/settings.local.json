@@ -17,7 +17,9 @@
       "Bash(timeout 6 python3 run_zen.py --demo --fast --windowed --theme aurora --no-audio)",
       "Bash(timeout 6 python3 run_zen.py --demo --fast --windowed)",
       "Bash(ls -la exports/*.jsonl exports/*.txt)",
-      "Bash(timeout 8 python3 run_zen.py --demo --no-audio --windowed)"
+      "Bash(timeout 8 python3 run_zen.py --demo --no-audio --windowed)",
+      "Bash(python3 -c ' *)",
+      "Bash(python -c \"from zen_breathing.state import BreathingState; print\\('OK'\\)\")"
     ]
   }
 }
