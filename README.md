@@ -7,11 +7,14 @@ No gamification points, no achievement badges. Just you, your breath, and someth
 ---
 
 ## Screenshots
+<img width="3834" height="2389" alt="image" src="https://github.com/user-attachments/assets/7700dd13-3585-4dae-a756-91b37efbcf03" />
 
-![Ocean theme – training phase](screenshots/ocean_training.png)
+![Ocean theme – training phase](https://github.com/user-attachments/assets/7700dd13-3585-4dae-a756-91b37efbcf03)
+
 *Ocean theme — the outer white ring is the pacer, the teal fill tracks your breath. The ocean brightens as you synchronize.*
+<img width="3833" height="2383" alt="image" src="https://github.com/user-attachments/assets/2590a3a0-83ef-4528-9f3e-5daa6fa3c98e" />
 
-![Aurora theme – flow state](screenshots/aurora_flow.png)
+![Aurora theme – flow state](https://github.com/user-attachments/assets/2590a3a0-83ef-4528-9f3e-5daa6fa3c98e)
 *Aurora theme — coherence drives color saturation across the northern-lights curtain.*
 
 ![Session report](screenshots/session_report.png)
