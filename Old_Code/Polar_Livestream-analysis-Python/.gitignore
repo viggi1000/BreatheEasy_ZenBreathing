@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Session recordings (generated at runtime — do not commit patient data)
+exports/
+
+# Scratch / debug scripts
+test_mqtt.py
+
+# OAuth Credentials
+token.json
+client_secret.json

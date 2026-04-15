@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(consciousness-council)",
+      "Skill(consciousness-council:*)",
+      "Bash(pip install:*)",
+      "Bash(python -c ':*)",
+      "Bash(python3 -c ':*)",
+      "Bash(pip --version)",
+      "Bash(timeout 8 python3 run_zen.py --windowed --fast --no-audio)",
+      "Bash(timeout 5 python3 run_zen.py --windowed --fast)",
+      "Bash(python3 -c \"import pyqtgraph; print\\(pyqtgraph.__version__\\)\")",
+      "Bash(timeout 6 python3 run_zen.py --demo --fast --windowed --no-audio --debug)",
+      "Bash(timeout 8 python3 run_zen.py --demo --fast --windowed --no-audio)",
+      "Bash(timeout 8 python3 run_zen.py --demo --fast --windowed --debug --no-audio)",
+      "Bash(timeout 6 python3 run_zen.py --windowed --no-audio)",
+      "Bash(timeout 6 python3 run_zen.py --demo --fast --windowed --theme aurora --no-audio)",
+      "Bash(timeout 6 python3 run_zen.py --demo --fast --windowed)",
+      "Bash(ls -la exports/*.jsonl exports/*.txt)",
+      "Bash(timeout 8 python3 run_zen.py --demo --no-audio --windowed)"
+    ]
+  }
+}

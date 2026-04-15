@@ -1,0 +1,37 @@
+============================================================
+  Z E N B R E A T H I N G  --  Session Report
+============================================================
+
+Date:     2026-04-11 10:53
+Duration: 0m 15s
+Samples:  30
+Data:     zen_session_20260411_105235.jsonl
+
+--- Breathing ---
+  Start rate:      12.0 BPM
+  End rate:        20.2 BPM
+  Lowest rate:     9.1 BPM
+  Calibrated at:   16.9 BPM
+  Target:          6.0 BPM
+
+--- Coherence ---
+  Mean:            9.8%
+  Max:             21.4%
+  Time > 50%:      0% of session
+
+--- Sync Score ---
+  Mean:            0.33
+  Max:             0.93
+
+--- Heart Rate ---
+  Start:           87 BPM
+  End:             90 BPM
+  Mean:            82 BPM
+  Min:             73 BPM
+
+--- Exhale/Inhale Ratio ---
+  Mean:            1.65
+  End:             1.61
+  Target:          1.50
+
+============================================================

@@ -1,0 +1,20 @@
+# ZenBreathing -- dependencies
+# pip install -r requirements_zen.txt
+
+# GUI + OpenGL
+PyQt5>=5.15.0
+moderngl>=5.7.0
+
+# Signal processing (for live mode)
+numpy>=1.20.0
+scipy>=1.7.0
+
+# Real-time signal plots (debug panel)
+pyqtgraph>=0.13.0
+
+# Audio (optional -- graceful fallback if missing)
+sounddevice>=0.4.0
+
+# BLE (only needed for --live mode with real Polar H10)
+bleak>=0.22.0
+bleakheart>=0.2.0

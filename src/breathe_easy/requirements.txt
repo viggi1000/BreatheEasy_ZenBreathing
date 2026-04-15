@@ -1,0 +1,18 @@
+# BreatheEasy: ZenBreathing Hackathon Dependencies
+# Run `pip install -r requirements.txt` to install
+
+# GUI and 3D Visualization
+PyQt5>=5.15.0
+moderngl>=5.8.2
+
+# Hardware / Networking
+bleak>=0.22.0
+bleakheart>=0.2.0
+
+# Signal Processing
+numpy>=2.0.0
+scipy>=1.13.0
+
+# Added explicitly for audio and debug dashboard
+pyqtgraph>=0.13.0
+sounddevice>=0.4.6
