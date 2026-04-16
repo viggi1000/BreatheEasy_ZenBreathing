@@ -1,6 +1,6 @@
 # ZenBreathing
 
-A real-time biofeedback breathing art experience. Plug in a **Polar H10** chest strap, and the app listens to your breath via accelerometer and ECG, then drives a living GLSL environment — an underwater ocean, a northern-lights aurora, or a Journey-style glowing orb — that responds to how well you synchronize with its slow, resonant 6 BPM pacer.
+A real-time biofeedback breathing art experience. Plug in a **Polar H10** chest strap, and the app listens to your breath via accelerometer and ECG, then drives a living GLSL environment   an underwater ocean, a northern-lights aurora, or a Journey-style glowing orb   that responds to how well you synchronize with its slow, resonant 6 BPM pacer.
 
 No gamification points, no achievement badges. Just you, your breath, and something beautiful that breathes with you.
 
@@ -9,10 +9,10 @@ No gamification points, no achievement badges. Just you, your breath, and someth
 ## Screenshots
 
 ![Ocean theme – training phase](screenshots/ocean_training.png)
-*Ocean theme — the outer white ring is the pacer, the teal fill tracks your breath. The ocean brightens as you synchronize.*
+*Ocean theme   the outer white ring is the pacer, the teal fill tracks your breath. The ocean brightens as you synchronize.*
 
 ![Aurora theme – calibrating phase](screenshots/aurora_flow.png)
-*Aurora theme — falling-star particles fill the sky as the aurora band pulses with the pacer. Color depth and saturation increase with coherence.*
+*Aurora theme   falling-star particles fill the sky as the aurora band pulses with the pacer. Color depth and saturation increase with coherence.*
 
 ![Session report](screenshots/session_report.png)
 *End-of-session report showing coherence trajectory, breathing rate evolution, and flow time.*
@@ -25,11 +25,11 @@ No gamification points, no achievement badges. Just you, your breath, and someth
 
 The short answer: RSA biofeedback works, but clinical tools are ugly, and consumer apps are gamified to the point of undermining the whole point.
 
-The longer answer starts with a paper trail. Research on **respiratory sinus arrhythmia (RSA)** shows that breathing at 0.1 Hz (roughly 6 breaths per minute) maximally entrains the autonomic nervous system and amplifies heart rate variability in the LF band — a state sometimes called cardiac coherence. The HeartMath group has studied this for decades. It correlates with reduced cortisol, improved attention, and faster stress recovery. What existing tools lack is a feedback medium that doesn't feel like a hospital waiting room.
+The longer answer starts with a paper trail. Research on **respiratory sinus arrhythmia (RSA)** shows that breathing at 0.1 Hz (roughly 6 breaths per minute) maximally entrains the autonomic nervous system and amplifies heart rate variability in the LF band   a state sometimes called cardiac coherence. The HeartMath group has studied this for decades. It correlates with reduced cortisol, improved attention, and faster stress recovery. What existing tools lack is a feedback medium that doesn't feel like a hospital waiting room.
 
-**[Breath of Life](https://dl.acm.org/doi/10.1145/3311350.3347180)** (Zhu et al., CHI Play 2019) showed that biofeedback presented as a game mechanic — one where your breathing *is* the controller — produces measurable HRV improvements with much better adherence than guided breathing apps. **[Ethereal Breathing](https://dl.acm.org/doi/10.1145/3581641.3584043)** (Vidal et al., CHI 2023) extended this with holographic display and showed that ambient, low-abstraction feedback outperforms explicit score displays for parasympathetic activation.
+**[Breath of Life](https://dl.acm.org/doi/10.1145/3311350.3347180)** (Zhu et al., CHI Play 2019) showed that biofeedback presented as a game mechanic   one where your breathing *is* the controller   produces measurable HRV improvements with much better adherence than guided breathing apps. **[Ethereal Breathing](https://dl.acm.org/doi/10.1145/3581641.3584043)** (Vidal et al., CHI 2023) extended this with holographic display and showed that ambient, low-abstraction feedback outperforms explicit score displays for parasympathetic activation.
 
-The visual design borrows from **Journey** (thatgamecompany, 2012) — a game with no text, no score, and no explicit objectives, where the environment itself is the reward. The same philosophy applies here: the goal is to make coherent breathing feel good without turning it into a task.
+The visual design borrows from **Journey** (thatgamecompany, 2012)   a game with no text, no score, and no explicit objectives, where the environment itself is the reward. The same philosophy applies here: the goal is to make coherent breathing feel good without turning it into a task.
 
 ---
 
@@ -40,7 +40,7 @@ The visual design borrows from **Journey** (thatgamecompany, 2012) — a game wi
 - **Timing-based phase estimation**: lag ~30 ms vs ~1–2 s for a naive IIR filter output
 - **Dual-signal fusion**: ACC chest motion and ECG-derived respiration (EDR), weighted by signal quality
 - **Three-tier sync scoring**: instant direction match, short-window rate + cross-correlation, and 30 s spectral coherence
-- **Adaptive pacer**: starts at your resting rate and glides toward 6 BPM at a maximum of 1 BPM/min — no jarring jumps
+- **Adaptive pacer**: starts at your resting rate and glides toward 6 BPM at a maximum of 1 BPM/min   no jarring jumps
 - **Band-limited noise audio**: ocean wave layers built from Butterworth-filtered noise, not looped samples or pure tones
 - **Session report**: duration, average/peak coherence, sync score, flow time, and rate trajectory
 
@@ -67,7 +67,7 @@ The main packages:
 | `sounddevice` | Real-time audio callback |
 | `bleak`, `bleakheart` | BLE connection to Polar H10 |
 
-`sounddevice` and `bleak`/`bleakheart` are optional — the app runs without audio and without a real device (use `--demo` mode).
+`sounddevice` and `bleak`/`bleakheart` are optional   the app runs without audio and without a real device (use `--demo` mode).
 
 ### Quick start (no hardware needed)
 
@@ -102,7 +102,7 @@ The Polar H10 is a chest-strap heart rate monitor with onboard 3-axis ACC at 100
 1. Install the **Polar Flow** app on your phone.
 2. Pair the H10 to the app and complete firmware updates.
 3. In Polar Flow → Settings → your H10 → **Open access** → enable it. This allows third-party BLE clients to read raw ACC and ECG streams.
-4. Wet the electrode patches on the strap before putting it on — dry electrodes give noisy ECG.
+4. Wet the electrode patches on the strap before putting it on   dry electrodes give noisy ECG.
 5. Position the strap just below the sternum, sensor pod centered, electrode patches making firm contact.
 
 ### Connection in ZenBreathing
@@ -129,15 +129,15 @@ The core challenge is extracting a clean, low-latency breathing phase signal fro
 
 ### ACC-derived respiration (primary)
 
-The Polar H10's accelerometer measures in mg (milli-g) at 100 Hz. Chest expansion during breathing causes a small but measurable change in the orientation of the strap — regardless of whether you're standing, sitting, or lying down.
+The Polar H10's accelerometer measures in mg (milli-g) at 100 Hz. Chest expansion during breathing causes a small but measurable change in the orientation of the strap   regardless of whether you're standing, sitting, or lying down.
 
-**Step 1 — Gravity subtraction.** A causal 2nd-order Butterworth low-pass filter at 0.04 Hz tracks the gravity vector on each axis. Subtracting this from the raw signal isolates dynamic motion.
+**Step 1   Gravity subtraction.** A causal 2nd-order Butterworth low-pass filter at 0.04 Hz tracks the gravity vector on each axis. Subtracting this from the raw signal isolates dynamic motion.
 
-**Step 2 — Posture-invariant norm.** The Euclidean norm of the gravity-subtracted 3-axis residual is a scalar breathing signal that doesn't depend on which way the sensor is oriented. This is the key to robustness across postures.
+**Step 2   Posture-invariant norm.** The Euclidean norm of the gravity-subtracted 3-axis residual is a scalar breathing signal that doesn't depend on which way the sensor is oriented. This is the key to robustness across postures.
 
-**Step 3 — Breathing bandpass.** A 2nd-order Butterworth bandpass at 0.07–0.7 Hz (4–42 breaths/min) is applied incrementally with maintained filter state (`zi` in scipy) so there are no phase discontinuities between chunks.
+**Step 3   Breathing bandpass.** A 2nd-order Butterworth bandpass at 0.07–0.7 Hz (4–42 breaths/min) is applied incrementally with maintained filter state (`zi` in scipy) so there are no phase discontinuities between chunks.
 
-**Step 4 — Peak-holder normalization.** A running min/max with slow decay (factor 0.9995/sample) keeps the signal in a [0, 1] range without jumping when extremes roll out of the window.
+**Step 4   Peak-holder normalization.** A running min/max with slow decay (factor 0.9995/sample) keeps the signal in a [0, 1] range without jumping when extremes roll out of the window.
 
 ### The timing-based phase (key innovation)
 
@@ -155,7 +155,7 @@ During exhale:
     phase = 0.5 * (1 + cos(π × frac))    # smooth 1→0
 ```
 
-The expected half-cycle durations adapt with exponential moving averages (65/35 weighting — more weight on history for stability). The transition detection itself has ~30 ms lag (one ACC chunk), compared to 1–2 s for the filter output. Once timing data is available, the cosine interpolation replaces the raw-filter output completely.
+The expected half-cycle durations adapt with exponential moving averages (65/35 weighting   more weight on history for stability). The transition detection itself has ~30 ms lag (one ACC chunk), compared to 1–2 s for the filter output. Once timing data is available, the cosine interpolation replaces the raw-filter output completely.
 
 ### ECG-derived respiration (EDR)
 
@@ -163,7 +163,7 @@ Chest expansion modulates QRS morphology: the amplitude of the R peak, the QR sl
 
 Every R peak is detected in the 130 Hz ECG signal. Three features are extracted per beat: R amplitude, QR slope pair, RS slope pair. These are fused (0.4 / 0.3 / 0.3 weights), interpolated to a uniform 4 Hz grid via cubic spline, and bandpassed at 0.05–0.8 Hz to isolate the respiratory envelope.
 
-EDR works without motion at all — useful when the ACC signal is noisy. Its lag is 1–2 beats (~0.8–1.5 s at resting HR), so it is used more for rate estimation and quality weighting than for instantaneous phase.
+EDR works without motion at all   useful when the ACC signal is noisy. Its lag is 1–2 beats (~0.8–1.5 s at resting HR), so it is used more for rate estimation and quality weighting than for instantaneous phase.
 
 ### Signal quality index (SQI) fusion
 
@@ -183,10 +183,10 @@ The biofeedback engine computes how well you are following the pacer across thre
 
 | Tier | Signal | Window | Weight |
 |---|---|---|---|
-| 1 — Direction | Inhale/exhale match | ~30 ms | 35% |
-| 2 — Rate | BPM match | 15 s | 40% |
-| 2 — Cross-correlation | Phase lag estimation | 15 s | 25% |
-| 3 — Spectral coherence | FFT peak alignment | 30 s | reported separately |
+| 1   Direction | Inhale/exhale match | ~30 ms | 35% |
+| 2   Rate | BPM match | 15 s | 40% |
+| 2   Cross-correlation | Phase lag estimation | 15 s | 25% |
+| 3   Spectral coherence | FFT peak alignment | 30 s | reported separately |
 
 Tiers 1 and 2 dominate the visual feedback because they respond quickly. Tier 3 (HeartMath-style spectral coherence score) is reported in the session summary and influences the audio reward layers.
 
@@ -238,7 +238,7 @@ requirements_zen.txt  pip dependencies
 
 Several directions are worth exploring, roughly ordered by expected impact.
 
-**Personalized resonance frequency.** The canonical 6 BPM target comes from population averages. In practice, the LF/HF resonance peak shifts by 0.5–1.5 BPM between individuals. A short HRV measurement at session start — watching where in the 0.05–0.15 Hz band LF power peaks as the pacer sweeps — could tune the target automatically.
+**Personalized resonance frequency.** The canonical 6 BPM target comes from population averages. In practice, the LF/HF resonance peak shifts by 0.5–1.5 BPM between individuals. A short HRV measurement at session start   watching where in the 0.05–0.15 Hz band LF power peaks as the pacer sweeps   could tune the target automatically.
 
 **Live HRV dashboard.** RMSSD, SDNN, and pNN50 are easy to compute from the R-peak stream the app already produces. Displaying these during and after a session gives a physiological anchor to the subjective experience, and makes the tool usable for researchers.
 
@@ -246,15 +246,15 @@ Several directions are worth exploring, roughly ordered by expected impact.
 
 **Wearable-free mode.** Remote photoplethysmography (rPPG) from a laptop camera can estimate both HR and respiratory rate at moderate accuracy. Combined with a microphone for breath sound detection, it could give a usable signal without any hardware.
 
-**Haptic pacer on a smartwatch.** A vibration pattern on the wrist — tap on inhale start, fade out over the breath — is a compelling eyes-closed guide. Apple Watch and Wear OS both expose vibration APIs. Paired with BLE from the app, this is a natural companion.
+**Haptic pacer on a smartwatch.** A vibration pattern on the wrist   tap on inhale start, fade out over the breath   is a compelling eyes-closed guide. Apple Watch and Wear OS both expose vibration APIs. Paired with BLE from the app, this is a natural companion.
 
-**Multi-user rooms.** RSA entrainment across people in the same physical space has been documented (choral singers, meditation groups). A simple shared pacer mode — two devices on the same network, one leads the pace, both see each other's rings — would be straightforward to add.
+**Multi-user rooms.** RSA entrainment across people in the same physical space has been documented (choral singers, meditation groups). A simple shared pacer mode   two devices on the same network, one leads the pace, both see each other's rings   would be straightforward to add.
 
 **EEG integration.** Combining respiratory coherence with frontal alpha power (e.g., from a Muse headband or OpenBCI) would let the app detect not just physiological state but attentional state. High coherence + high alpha is a strong signal that the session is working.
 
 **Export for research.** The JSONL session log already records all signals. A converter to EDF+ (the standard for physiological recordings) would make sessions importable directly into MATLAB, MNE-Python, or any clinical analysis tool.
 
-**Adaptive session pacing.** The current arc is fixed: calibrate → train → flow. Coherence trajectory could drive this dynamically — extend training if the user is struggling, shorten calibration if they arrive already relaxed, trigger a "rest" phase if coherence drops sharply.
+**Adaptive session pacing.** The current arc is fixed: calibrate → train → flow. Coherence trajectory could drive this dynamically   extend training if the user is struggling, shorten calibration if they arrive already relaxed, trigger a "rest" phase if coherence drops sharply.
 
 ---
 
